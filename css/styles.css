@@ -6,10 +6,11 @@ body {
   }
   
   .menu {
+    border-radius: 15px 50px;
     background-color: #cfcfcf;
     font-weight: bold;
     font-size: 22px;
-    opacity: 0.5;
+    opacity: 0.4;
   }
   
   .menu ul {
@@ -23,11 +24,13 @@ body {
   a {
     color: #990099;
     text-decoration: none;
+
   }
   
   a:hover {
     text-decoration: underline;
-    opacity: 0.25;
+    opacity: 0.3;
+    text-shadow: 5px 5px 7px #000000;
   }
   
   .site-title,
@@ -36,6 +39,6 @@ body {
     text-align: center;
   }
   
-  .site-subtitle {
-    font-style: italic;
+  .site-subtitle a {
+    color: #cfcfcf;
   }
