@@ -31,13 +31,13 @@ Equivalent to conditional
 footer{
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: #000000;
   font-family: "Montserrat", sans-serif;
   padding: 3px;
 }
 
 footer a {
+  display: flex;
   color: #990099;
   font-size: 25px;
   margin: 0px 50px 0px 50px;
