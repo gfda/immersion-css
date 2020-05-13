@@ -12,6 +12,7 @@ header{
   align-items: center;
 }
 
+
 body {
   background-image: url(../images/background.jpg);
   background-size: auto 100vh;
@@ -20,27 +21,48 @@ body {
   height: 100vh;
 }
 /*Media example, used to adjust font-size based on pixel range.
-Equivalent to conditional*/
+Equivalent to conditional
 @media(min-width: 400px) {
   body{
     font-size: 1em;
   }
+}*/
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  font-family: "Montserrat", sans-serif;
+  padding: 3px;
+}
+
+footer a {
+  color: #990099;
+  font-size: 25px;
+  margin: 0px 50px 0px 50px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+footer img{
+  max-width: 32px; 
+  max-height: 32px;
 }
   
 .menu {
+  position: fixed;
+  top: 1px;
+  width: 100vw;
+}
+.menu a{
   background-color: #cfcfcf;
   border-radius: 15px 50px;
   box-shadow: 6px 7px 7px #990099;
+  display: block;
   font-size: 22px;
   font-weight: bold;
-  position: fixed;
   opacity: 0.4;
-  top: 0px;
-  width: 100vw;
-  
-}
-.menu a{
-  display: block;
   padding: 5px 25px;
 }
 .menu ul {
@@ -70,4 +92,11 @@ a:hover {
   
 .site-subtitle a {
   color: #cfcfcf;
+}
+
+.about,
+.contact,
+.portfolio {
+  color: #990099;
+  text-align: center;
 }
