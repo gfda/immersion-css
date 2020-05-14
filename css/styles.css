@@ -5,13 +5,27 @@
   padding: 0px;
 }
 
-header{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+a {
+  color: #990099;
+  text-decoration: none;
 }
 
+a:hover {
+  opacity: 0.3;
+  text-decoration: underline;
+  text-shadow: 5px 5px 7px #000000;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+header div{
+  text-align: center;
+}
 
 body {
   background-image: url(../images/background.jpg);
@@ -24,21 +38,22 @@ body {
 Equivalent to conditional
 @media(min-width: 400px) {
   body{
+    font-family: 'Ubuntu Mono', monospace;
     font-size: 1em;
   }
 }*/
 
 footer{
-  display: flex;
-  justify-content: center;
   background-color: #000000;
+  display: flex;
   font-family: "Montserrat", sans-serif;
+  justify-content: center;
   padding: 3px;
 }
 
 footer a {
-  display: flex;
   color: #990099;
+  display: flex;
   font-size: 25px;
   margin: 0px 50px 0px 50px;
   padding: 10px;
@@ -55,6 +70,7 @@ footer img{
   top: 1px;
   width: 100vw;
 }
+
 .menu a{
   background-color: #cfcfcf;
   border-radius: 15px 50px;
@@ -65,6 +81,7 @@ footer img{
   opacity: 0.4;
   padding: 5px 25px;
 }
+
 .menu ul {
   display: flex;
   justify-content: space-around;
@@ -73,15 +90,9 @@ footer img{
   list-style: none;
 }
 
-a {
-  color: #990099;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-  opacity: 0.3;
-  text-shadow: 5px 5px 7px #000000;
+.img-perfil{
+  border-radius: 50%;
+  box-shadow: 6px 7px 7px #990099;
 }
 
 .site-title,
@@ -89,7 +100,7 @@ a:hover {
   color: #cfcfcf;
   text-align: center;
 }
-  
+
 .site-subtitle a {
   color: #cfcfcf;
 }
@@ -98,5 +109,59 @@ a:hover {
 .contact,
 .portfolio {
   color: #990099;
+  font-size: 1.5em;
+  padding: 1em;
   text-align: center;
 }
+
+.about,
+.portfolio {
+  height: 100vh;
+}
+.portfolio h2{
+  margin-bottom: 1em;
+}
+
+.portfolio .grid {
+  display: grid;
+  gap: 1em; 
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    align-content: center;
+    grid-template-columns: 240px 240px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 880px) { 
+  .portfolio .grid {
+    align-content: center;
+    grid-template-columns: repeat(3, 240px);
+    justify-content: center;
+  }
+}
+
+.portfolio figure {
+  text-align: center;
+}
+
+.img-potfolio {
+  height: 180px;
+  object-fit: cover;
+  transition: transform .2s;
+  width: 240px;
+}
+
+.img-potfolio:hover{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+.portfolio .grid a:hover{
+  opacity: 1;
+  text-decoration: none;
+}
+
