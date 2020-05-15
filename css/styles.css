@@ -8,12 +8,13 @@
 a {
   color: #990099;
   text-decoration: none;
+  transition: text-decoration 1s, opacity 0.75s;
 }
 
 a:hover {
-  opacity: 0.3;
-  text-decoration: underline;
-  text-shadow: 5px 5px 7px #000000;
+  opacity: 0.4;
+  text-decoration: blink;
+  text-shadow: 1px 1px 9px #990099;
 }
 
 header {
@@ -35,36 +36,20 @@ body {
   height: 100vh;
 }
 /*Media example, used to adjust font-size based on pixel range.
-Equivalent to conditional
+Equivalent to conditional*/
 @media(min-width: 400px) {
   body{
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: 1em;
+    font-family: "Lucinda Console", Monaco, monospace;
+    font-size: 14px; 
   }
-}*/
-
-footer{
-  background-color: #000000;
-  display: flex;
-  font-family: "Montserrat", sans-serif;
-  justify-content: center;
-  padding: 3px;
 }
-
-footer a {
-  color: #990099;
-  display: flex;
-  font-size: 25px;
-  margin: 0px 50px 0px 50px;
-  padding: 10px;
-  text-decoration: none;
+ 
+@media(min-width: 600px) {
+  body{
+    font-family: "Lucinda Console", Monaco, monospace;
+    font-size: 18px; 
+  }
 }
-
-footer img{
-  max-width: 32px; 
-  max-height: 32px;
-}
-  
 .menu {
   position: fixed;
   top: 1px;
@@ -74,12 +59,19 @@ footer img{
 .menu a{
   background-color: #cfcfcf;
   border-radius: 15px 50px;
-  box-shadow: 6px 7px 7px #990099;
+  box-shadow: 6px 6px 8px #990099;
   display: block;
-  font-size: 22px;
+  font-size: 1em;
   font-weight: bold;
   opacity: 0.4;
   padding: 5px 25px;
+  transition: text-decoration 1s, opacity 0.75s;
+}
+
+
+.menu a:hover {
+  opacity: 0.75;;
+  text-decoration: blink;
 }
 
 .menu ul {
@@ -92,7 +84,7 @@ footer img{
 
 .img-perfil{
   border-radius: 50%;
-  box-shadow: 6px 7px 7px #990099;
+  box-shadow: 8px 8px 10px #020202;
 }
 
 .site-title,
@@ -109,17 +101,32 @@ footer img{
 .contact,
 .portfolio {
   color: #990099;
+  font-family: 'Righteous', cursive;
   font-size: 1.5em;
   padding: 1em;
-  text-align: center;
+  text-align: left;
+  min-height: 100vh;
 }
 
-.about,
-.portfolio {
-  height: 100vh;
-}
+.about h2,
+.contact h2,
 .portfolio h2{
+  font-size: 2em;
+  font-weight: bold;
   margin-bottom: 1em;
+  margin-top: 0.5em;
+
+}
+
+.about p {
+  color: #cfcfcf;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1em;
+  padding: 1em;
+}
+
+.portfolio figurecaption {
+  color: #cfcfcf;
 }
 
 .portfolio .grid {
@@ -143,14 +150,10 @@ footer img{
   }
 }
 
-.portfolio figure {
-  text-align: center;
-}
-
 .img-potfolio {
   height: 180px;
   object-fit: cover;
-  transition: transform .2s;
+  transition: transform .5s;
   width: 240px;
 }
 
@@ -165,3 +168,23 @@ footer img{
   text-decoration: none;
 }
 
+.contact a {
+  color: #990099;
+  font-size: 4em;
+  opacity: 0.65;
+  text-align: center;
+  transition: transform 0.5s, text-shadow 0.7s, opacity 0.5s;
+}
+
+.contact a:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  opacity: 1;
+  text-decoration: none;
+  text-shadow: 0px 0px 10px#990099;
+  transform: scale(1.1);
+}
+
+.contact .icons {
+  text-align: center;
+}
