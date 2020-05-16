@@ -1,2 +1,2 @@
 # immersion-css
-Introduction to web development using HTML, CSS and Github Pages.
+Introduction to web front-end development using HTML, CSS and Github Pages.
