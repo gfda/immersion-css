@@ -50,6 +50,7 @@ Equivalent to conditional*/
     font-size: 18px; 
   }
 }
+
 .menu {
   position: fixed;
   top: 1px;
@@ -82,7 +83,24 @@ Equivalent to conditional*/
   list-style: none;
 }
 
-.img-perfil{
+.title{
+  animation: alternate 2s title-animation forwards;  
+}
+
+@keyframes title-animation{
+  from {
+    filter: blur(15px);
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  100%{
+    filter: blur(0px);
+    opacity: 1;
+    transform: scale(1) ;
+  }
+}
+
+.img-perfil {
   border-radius: 50%;
   box-shadow: 8px 8px 10px #020202;
 }
@@ -108,12 +126,22 @@ Equivalent to conditional*/
   min-height: 100vh;
 }
 
+@media (min-widht: 1200px){
+  .about,
+  .contact,
+  .portfolio {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+}
+
 .about h2,
 .contact h2,
 .portfolio h2{
   font-size: 2em;
   font-weight: bold;
-  margin-bottom: 1em;
+  margin-bottom: 0.75em;
   margin-top: 0.5em;
 
 }
@@ -121,8 +149,20 @@ Equivalent to conditional*/
 .about p {
   color: #cfcfcf;
   font-family: 'Ubuntu Mono', monospace;
-  font-size: 1em;
+  font-size: 0.75em;
   padding: 1em;
+  text-align: justify;
+  text-indent: 1em;
+}
+
+.about a {
+  font-family: 'Ubuntu Mono', monospace;
+  transition: text-decoration 1s, opacity 0.75s;
+}
+
+.about a:hover {
+  opacity: 0.75;;
+  text-decoration: blink;
 }
 
 .portfolio figurecaption {
@@ -154,7 +194,7 @@ Equivalent to conditional*/
   height: 180px;
   object-fit: cover;
   transition: transform .5s;
-  width: 240px;
+  width: 100%;
 }
 
 .img-potfolio:hover{
@@ -170,7 +210,7 @@ Equivalent to conditional*/
 
 .contact a {
   color: #990099;
-  font-size: 4em;
+  font-size: 3.5em;
   opacity: 0.65;
   text-align: center;
   transition: transform 0.5s, text-shadow 0.7s, opacity 0.5s;
