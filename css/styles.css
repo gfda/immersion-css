@@ -56,6 +56,7 @@ Equivalent to conditional*/
   position: fixed;
   top: 1px;
   width: 100vw;
+  z-index: 1;
 }
 
 .menu a{
@@ -105,12 +106,12 @@ Equivalent to conditional*/
 }
 
 @keyframes title-animation{
-  from {
+  from{
     filter: blur(15px);
     opacity: 0;
     transform: scale(0.2);
   }
-  100%{
+ to{
     filter: blur(0px);
     opacity: 1;
     transform: scale(1) ;
