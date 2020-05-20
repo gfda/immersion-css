@@ -35,6 +35,7 @@ body {
   font-size: 1em;
   height: 100vh;
 }
+
 /*Media example, used to adjust font-size based on pixel range.
 Equivalent to conditional*/
 @media(min-width: 400px) {
@@ -78,6 +79,22 @@ Equivalent to conditional*/
 .menu ul {
   display: flex;
   justify-content: space-around;
+}
+
+@media(min-width: 300px){
+  .menu ul {
+    font-size: 0.7em;
+  }
+}
+@media(min-width: 400px){
+  .menu ul {
+    font-size: 1em;
+  }
+}
+@media(min-width: 600px){
+  .menu ul {
+    font-size: 1.5em;
+  }
 }
 .menu li {
   list-style: none;
