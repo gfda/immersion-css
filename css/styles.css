@@ -40,14 +40,12 @@ body {
 Equivalent to conditional*/
 @media(min-width: 400px) {
   body{
-    font-family: "Lucinda Console", Monaco, monospace;
     font-size: 14px; 
   }
 }
  
 @media(min-width: 600px) {
   body{
-    font-family: "Lucinda Console", Monaco, monospace;
     font-size: 18px; 
   }
 }
@@ -173,6 +171,16 @@ Equivalent to conditional*/
   text-indent: 1em;
 }
 
+@media(min-width: 300px) {
+  .about p {
+    font-size: 0.5em;
+  }
+}
+@media(min-width: 600px) {
+  .about p {
+    font-size: 0.75em;
+  }
+}
 .about a {
   font-family: 'Ubuntu Mono', monospace;
   transition: text-decoration 1s, opacity 0.75s;
