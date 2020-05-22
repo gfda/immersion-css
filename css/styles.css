@@ -11,7 +11,8 @@ a {
   transition: text-decoration 1s, opacity 0.75s;
 }
 
-a:hover {
+a:hover,
+a:focus {
   opacity: 0.4;
   text-decoration: blink;
   text-shadow: 1px 1px 9px #990099;
@@ -70,7 +71,8 @@ Equivalent to conditional*/
 }
 
 
-.menu a:hover {
+.menu a:hover,
+.menu a:focus {
   opacity: 0.75;;
   text-decoration: blink;
 }
@@ -186,7 +188,8 @@ Equivalent to conditional*/
   transition: text-decoration 1s, opacity 0.75s;
 }
 
-.about a:hover {
+.about a:hover,
+.about a:focus {
   opacity: 0.75;;
   text-decoration: blink;
 }
@@ -223,13 +226,15 @@ Equivalent to conditional*/
   width: 100%;
 }
 
-.img-potfolio:hover{
+.img-potfolio:hover,
+.img-potfolio:focus {
   -ms-transform: scale(1.2); /* IE 9 */
   -webkit-transform: scale(1.2); /* Safari 3-8 */
   transform: scale(1.2);
 }
 
-.portfolio .grid a:hover{
+.portfolio .grid a:hover,
+.portfolio .grid a:focus {
   opacity: 1;
   text-decoration: none;
 }
@@ -242,7 +247,8 @@ Equivalent to conditional*/
   transition: transform 0.5s, text-shadow 0.7s, opacity 0.5s;
 }
 
-.contact a:hover {
+.contact a:hover,
+.contact a:focus {
   -ms-transform: scale(1.2); /* IE 9 */
   -webkit-transform: scale(1.2); /* Safari 3-8 */
   opacity: 1;
