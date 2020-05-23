@@ -200,7 +200,7 @@ Equivalent to conditional*/
 
 .portfolio .grid {
   display: grid;
-  gap: 1em; 
+  grid-column-gap: 1.5em;
 }
 
 @media (min-width: 560px) {
@@ -258,7 +258,7 @@ Equivalent to conditional*/
 }
 
 .contact .icons {
-  text-align: center;
+  text-align: center; 
 }
 
 footer {
