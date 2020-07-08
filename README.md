@@ -11,3 +11,7 @@ As a result, there was an increase in the portfolio, practical and applied knowl
 Finally, it was possible to put the result on the air using Github Pages.
 
 [Gustavo Dias - Github IO](https://gfda.github.io/immersion-css/)
+
+## Author
+
+[Gustavo Dias A.](https://www.linkedin.com/in/gustavo-dias-alexandre-543568157/)
