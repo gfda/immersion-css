@@ -119,6 +119,8 @@ Equivalent to conditional*/
 }
 
 .img-perfil {
+  width: 360px;
+  height: 360px;
   border-radius: 50%;
   box-shadow: 8px 8px 10px #020202;
 }
