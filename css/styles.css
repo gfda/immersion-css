@@ -175,16 +175,12 @@ Equivalent to conditional*/
   text-indent: 1em;
 }
 
-@media(min-width: 300px) {
+@media(max-width: 360px) {
   .about p {
-    font-size: 0.5em;
+    font-size: 0.3em;
   }
 }
-@media(min-width: 600px) {
-  .about p {
-    font-size: 0.75em;
-  }
-}
+
 .about a {
   font-family: 'Ubuntu Mono', monospace;
   transition: text-decoration 1s, opacity 0.75s;
